@@ -11,3 +11,13 @@ Middle Fullstack Developer
 - email: js@mail.js.ru
 - phone: +345678(9)67
 - telegram @telegram_nick
+
+## Skills  
+
+- html/css
+- javascript
+- php, laravel
+- mysql/postgresql
+- vue js
+- git, docker
+- english B2
