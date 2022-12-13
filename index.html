@@ -1,12 +1,191 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CV</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-  </body>
+    <meta name="description" content="CV">
+    <meta name="keywords" content="CV">
+    <meta name="author" content="Stas Ivanov">
+
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>CV Stas Ivanov</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <h1 class="header__title">Stas Ivanov</h1>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="page-content">
+    <div class="container">
+        <div class="cover">
+            <h1>CV Resume </h1>
+            <section class="profile">
+                <div class="profile-bg">
+                    <div class="profile-img">
+                        <img src="assets/img/ava.jpg" width="180" height="180" alt="ava">
+                    </div>
+                    <div class="profile-name">
+                        <h2>Stas Ivanov</h2>
+                        <p>Junior Fullstack Developer</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section">
+                <div class="about__summary">
+                    <h2 class="title" id="about">About</h2>
+                    <p class="about">
+                        I am a junior web and full stack developer with over 2 years of experience.  I specialize in responsive web and application development for startups and small to medium size businesses.  My skill set includes wide-ranging expertise in WordPress, Drupal, Javascript frameworks such as React.js and Gatsby.js for headless CMS implementations, Node, Angular, Bootstrap, Shopify, RoR, Ruby, Django/Python and other platforms.  Extensive expertise in UI/UX, digital marketing, google analytics, adwords and SEM, makes me a virtual one-stop shop -- throw in impeccable attention to detail and very conscientious communication, and you get unusually fast and effective development at a very competitive rate.
+                    </p>
+                </div>
+            </section>
+
+            <section class="about section">
+                <div class="about__summary">
+                    <h2 class="title" id="contacts">Contacts</h2>
+                    <ul class="contacts">
+                        <li>email <span>gittadm@gmail.com</span></li>
+                        <li>telegram <span>@gittadm12</span></li>
+                        <li>phone <span>+9(990)2351-2345</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="skills section">
+                <div class="skills__header">
+                    <h2 class="title" id="skills">Skills</h2>
+                </div>
+                <ul class="skills__items">
+                    <li class="skills__item">
+                        <a><span>HTML</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>CSS</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>Javascript</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>Jquery</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>PHP</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>Git</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>Figma</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>Laravel</span></a>
+                    </li>
+                    <li class="skills__item">
+                        <a><span>English B2</span></a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="projects section">
+                <h2 class="title" id="projects">Projects</h2>
+                <div class="projects__inner">
+                    <ol class="projects">
+                        <li><a href="http://www.ossn.ru">www.ossn.ru</a> - backend (laravel, mysql)</li>
+                        <li><a href="http://site.com">www.vue.com</a> - fullstack (laravel + vue js)</li>
+                        <li><a href="http://site.com">www.react.com</a> - fullstack (django + react)</li>
+                        <li><a href="http://site.com">www.angular.com</a> - frontend (angular)</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="code section">
+                <div class="code__inner">
+                    <h2 class="title" id="code">Code</h2>
+                    <pre>
+                        <code>
+class PaginationHelper {
+
+    constructor(collection, itemsPerPage) {
+        this.collection = collection;
+        this.itemsPerPage = itemsPerPage;
+    }
+
+    itemCount() {
+        return this.collection.length;
+    }
+
+    pageCount() {
+        return Math.ceil(this.itemCount() / this.itemsPerPage);
+    }
+
+    pageItemCount(pageIndex) {
+        if (pageIndex &#x3C; 0 || pageIndex &#x3E;= this.pageCount()) {
+            return -1;
+        }
+
+        if (pageIndex &#x3C; this.pageCount() - 1) {
+            return this.itemsPerPage;
+        }
+
+        return this.itemCount() - this.itemsPerPage * (this.pageCount() - 1);
+    }
+
+    pageIndex(itemIndex) {
+        if (itemIndex &#x3C; 0 || itemIndex &#x3E;= this.itemCount()) {
+            return -1;
+        }
+
+        return parseInt(itemIndex / this.itemsPerPage);
+    }
+}
+                        </code>
+                      </pre>
+                </div>
+            </section>
+
+            <section class="edu section">
+                <div class="edu__inner">
+                    <h2 class="title" id="education">Education</h2>
+                    <ol class="education">
+                        <li>The Best University Of City, 2010-2014</li>
+                        <li>The Best Courses of The Best, 2016</li>
+                        <li>One More The Best University Of The Best, 2015-2019</li>
+                        <li>English Courses, B2</li>
+                        <li>Javascript Courses for Junior</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <a href="https://github.com/gittadm" target="_blank">&copy; 2022 github: <span class="blue">gittadm</span></a>
+                <a href="https://rs.school/js" target="_blank"><img src="assets/img/rss.svg" alt="rss" width="120"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
