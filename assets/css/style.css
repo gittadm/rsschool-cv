@@ -1,0 +1,170 @@
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #434a54;
+    background-color: #f5f7fa;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 16px;
+    text-align: right;
+    padding: 6px;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto 0;
+}
+
+.header__menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.header__menu ul li:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 26px;
+}
+
+.cover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.profile-bg {
+    background: darkslategray;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    border-radius: 2px;
+    height: 220px;
+}
+
+.profile-img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-name {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.profile-name h2 {
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    margin-top: 44px;
+}
+
+.profile-name p {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+ul.contacts li {
+    display: inline-block;
+    font-size: smaller;
+    padding-right: 22px;
+}
+
+ul.contacts li span {
+    font-size: 24px;
+}
+
+.about {
+    margin-top: 22px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 80px;
+    font-size: 22px;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.about__summary p {
+    margin-bottom: 16px;
+}
+
+.section {
+    margin-top: 22px;
+    padding: 0 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid darkslategray;
+}
+
+.skills__items {
+    padding-left: 0;
+}
+
+.skills__item {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: darkslategray;
+    border-radius: 15px;
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+}
+
+.skills__item span {
+    font-weight: 900;
+}
+
+.skills__item a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.projects, .education {
+    font-size: larger;
+}
+
+.blue {
+    color: darkblue;
+}
+
+.footer__links a:last-child {
+    float: right;
+}
